@@ -10,7 +10,7 @@ leave-one-subject-out (LOSO) cross-validation:
 | Hand-designed graph | `handdesigned` | FACS anatomy based AU graph, fixed across folds |
 | FCI-learned graph | `fci` | AU graph learned with FCI, refit per fold on that fold's training subjects only |
 
-The report explains the design and the results. This README explains how to run the code.
+This README explains how to run the code.
 
 ## Repository layout
 
@@ -19,8 +19,8 @@ The report explains the design and the results. This README explains how to run 
 ├── README.md
 ├── requirements.txt
 ├── scripts/                      all Python code (listed in the script reference below)
-├── slurm/                        the Slurm job scripts used on the cluster (optional)
-└── results/                      small result CSVs from the reported runs (optional)
+├── slurm/                        the Slurm job scripts used on the cluster
+└── results/                      small result CSVs from the reported runs
 ```
 
 The repository does **not** contain the CASME II images, the optical flow images, or the CoC-Tiny
@@ -303,5 +303,3 @@ settings.
 The backbone comes from Context-Cluster (Ma et al., ICLR 2023). The CI-Block is my own reimplementation
 from the equations in the CI-MER paper (Fang, Wu and Cao, ICME 2025), because no public code exists
 for it. CASME II is the work of Yan et al. (2014) and is used under its own licence.
-
-[[Add your licence for this code, for example MIT, as a LICENSE file in the repository.]]
