@@ -1,0 +1,16 @@
+condition,class,support,recall
+none,happiness,32,0.21875
+none,others,99,0.6161616161616161
+none,disgust,63,0.2857142857142857
+none,surprise,25,0.56
+none,repression,26,0.38461538461538464
+handdesigned,happiness,32,0.40625
+handdesigned,others,99,0.6565656565656566
+handdesigned,disgust,63,0.4126984126984127
+handdesigned,surprise,25,0.68
+handdesigned,repression,26,0.11538461538461539
+fci,happiness,32,0.3125
+fci,others,99,0.6262626262626263
+fci,disgust,63,0.49206349206349204
+fci,surprise,25,0.64
+fci,repression,26,0.23076923076923078

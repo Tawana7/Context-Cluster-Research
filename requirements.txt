@@ -1,0 +1,25 @@
+# Core (training and evaluation)
+torch
+torchvision
+timm==0.6.13
+einops
+pandas
+openpyxl
+pillow
+scikit-learn
+scipy
+causal-learn
+
+# Optical flow (compute_flow_casme2.py, sanity_check_flow.py, make_flow_figure.py)
+opencv-contrib-python
+numpy
+
+# Figures
+matplotlib
+
+# Optional
+wandb
+
+# For exact reproducibility, replace the unpinned lines above with the output of:
+#   pip freeze
+# taken from the environment that produced the reported results.

@@ -1,0 +1,604 @@
+If for semantic segmentation, please install mmsegmentation first
+If for detection, please install mmdetection first
+Using device: cuda (NVIDIA GeForce RTX 3090)
+1/246 5-class sequences have no flow images on disk (excluded everywhere; see flow_skip_log.csv). Per subject: {16: 1}
+AU vocabulary (15 nodes): ['1', '2', '4', '5', '6', '7', '9', '10', '12', '14', '15', '17', '24', '25', '38']
+*** fold 1/26 — held-out subject 1 ***
+  validation subjects: [2, 9, 26] (42 sequences); training on 22 subjects (194 sequences)
+  FCI learned 10 edges on 202 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.074 acc 0.297 | val loss 1.540 acc 0.286 | test acc 0.667
+  epoch   2 | train loss 2.679 acc 0.453 | val loss 1.638 acc 0.262 | test acc 0.778
+  epoch   3 | train loss 2.216 acc 0.688 | val loss 1.319 acc 0.357 | test acc 0.778
+  epoch   4 | train loss 1.771 acc 0.833 | val loss 1.453 acc 0.310 | test acc 0.667
+  epoch   5 | train loss 1.455 acc 0.896 | val loss 1.357 acc 0.429 | test acc 0.778
+  epoch   6 | train loss 1.139 acc 0.953 | val loss 1.380 acc 0.310 | test acc 0.444
+  epoch   7 | train loss 0.911 acc 0.958 | val loss 1.255 acc 0.500 | test acc 0.444
+  epoch   8 | train loss 0.703 acc 0.979 | val loss 1.663 acc 0.381 | test acc 0.778
+  epoch   9 | train loss 0.501 acc 0.995 | val loss 1.388 acc 0.452 | test acc 0.667
+  epoch  10 | train loss 0.321 acc 1.000 | val loss 1.480 acc 0.452 | test acc 0.778
+  epoch  11 | train loss 0.217 acc 1.000 | val loss 1.493 acc 0.500 | test acc 0.778
+  epoch  12 | train loss 0.140 acc 1.000 | val loss 1.525 acc 0.405 | test acc 0.778
+  epoch  13 | train loss 0.092 acc 1.000 | val loss 1.674 acc 0.452 | test acc 0.667
+  epoch  14 | train loss 0.058 acc 1.000 | val loss 1.731 acc 0.452 | test acc 0.667
+  epoch  15 | train loss 0.037 acc 1.000 | val loss 1.686 acc 0.357 | test acc 0.556
+  epoch  16 | train loss 0.024 acc 1.000 | val loss 1.721 acc 0.405 | test acc 0.556
+  epoch  17 | train loss 0.016 acc 1.000 | val loss 1.841 acc 0.452 | test acc 0.556
+  early stopping at epoch 17 (best val_loss 1.2548 at epoch 7)
+  -> test acc=0.4444, macro-F1=0.4841 (epochs run 17, best epoch 7, early-stopped)
+*** fold 2/26 — held-out subject 2 ***
+  validation subjects: [12, 17, 19] (61 sequences); training on 22 subjects (171 sequences)
+  FCI learned 11 edges on 178 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 2.948 acc 0.425 | val loss 1.605 acc 0.148 | test acc 0.308
+  epoch   2 | train loss 2.465 acc 0.544 | val loss 1.711 acc 0.148 | test acc 0.308
+  epoch   3 | train loss 2.245 acc 0.613 | val loss 1.253 acc 0.311 | test acc 0.462
+  epoch   4 | train loss 1.998 acc 0.719 | val loss 1.641 acc 0.295 | test acc 0.462
+  epoch   5 | train loss 1.838 acc 0.688 | val loss 1.097 acc 0.508 | test acc 0.231
+  epoch   6 | train loss 1.510 acc 0.887 | val loss 1.231 acc 0.426 | test acc 0.308
+  epoch   7 | train loss 1.241 acc 0.906 | val loss 1.280 acc 0.508 | test acc 0.308
+  epoch   8 | train loss 0.989 acc 0.988 | val loss 1.615 acc 0.393 | test acc 0.308
+  epoch   9 | train loss 0.799 acc 0.981 | val loss 1.167 acc 0.541 | test acc 0.308
+  epoch  10 | train loss 0.612 acc 1.000 | val loss 1.272 acc 0.443 | test acc 0.231
+  epoch  11 | train loss 0.455 acc 1.000 | val loss 1.372 acc 0.492 | test acc 0.308
+  epoch  12 | train loss 0.315 acc 1.000 | val loss 1.381 acc 0.492 | test acc 0.231
+  epoch  13 | train loss 0.209 acc 1.000 | val loss 1.640 acc 0.508 | test acc 0.308
+  epoch  14 | train loss 0.143 acc 1.000 | val loss 1.592 acc 0.443 | test acc 0.462
+  epoch  15 | train loss 0.094 acc 1.000 | val loss 1.598 acc 0.475 | test acc 0.462
+  early stopping at epoch 15 (best val_loss 1.0968 at epoch 5)
+  -> test acc=0.2308, macro-F1=0.1667 (epochs run 15, best epoch 5, early-stopped)
+*** fold 3/26 — held-out subject 3 ***
+  validation subjects: [10, 12, 13] (33 sequences); training on 22 subjects (205 sequences)
+  FCI learned 11 edges on 214 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.174 acc 0.286 | val loss 1.104 acc 0.606 | test acc 0.286
+  epoch   2 | train loss 2.838 acc 0.422 | val loss 1.188 acc 0.364 | test acc 0.286
+  epoch   3 | train loss 2.583 acc 0.521 | val loss 0.921 acc 0.636 | test acc 0.429
+  epoch   4 | train loss 2.210 acc 0.651 | val loss 1.075 acc 0.545 | test acc 0.429
+  epoch   5 | train loss 1.883 acc 0.745 | val loss 1.069 acc 0.545 | test acc 0.429
+  epoch   6 | train loss 1.606 acc 0.823 | val loss 0.933 acc 0.576 | test acc 0.429
+  epoch   7 | train loss 1.227 acc 0.896 | val loss 1.229 acc 0.545 | test acc 0.286
+  epoch   8 | train loss 0.972 acc 0.964 | val loss 0.915 acc 0.606 | test acc 0.429
+  epoch   9 | train loss 0.703 acc 0.979 | val loss 1.054 acc 0.545 | test acc 0.429
+  epoch  10 | train loss 0.522 acc 0.990 | val loss 1.068 acc 0.545 | test acc 0.429
+  epoch  11 | train loss 0.358 acc 1.000 | val loss 1.593 acc 0.515 | test acc 0.429
+  epoch  12 | train loss 0.241 acc 1.000 | val loss 1.316 acc 0.576 | test acc 0.286
+  epoch  13 | train loss 0.133 acc 1.000 | val loss 1.345 acc 0.576 | test acc 0.571
+  epoch  14 | train loss 0.084 acc 1.000 | val loss 1.303 acc 0.576 | test acc 0.571
+  epoch  15 | train loss 0.047 acc 1.000 | val loss 1.431 acc 0.545 | test acc 0.571
+  epoch  16 | train loss 0.028 acc 1.000 | val loss 1.398 acc 0.576 | test acc 0.286
+  epoch  17 | train loss 0.020 acc 1.000 | val loss 1.414 acc 0.636 | test acc 0.286
+  epoch  18 | train loss 0.013 acc 1.000 | val loss 1.446 acc 0.606 | test acc 0.286
+  early stopping at epoch 18 (best val_loss 0.9151 at epoch 8)
+  -> test acc=0.4286, macro-F1=0.5000 (epochs run 18, best epoch 8, early-stopped)
+*** fold 4/26 — held-out subject 4 ***
+  validation subjects: [2, 11, 20] (34 sequences); training on 22 subjects (206 sequences)
+  FCI learned 10 edges on 216 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.042 acc 0.349 | val loss 1.319 acc 0.559 | test acc 0.400
+  epoch   2 | train loss 2.560 acc 0.536 | val loss 1.333 acc 0.353 | test acc 0.600
+  epoch   3 | train loss 2.048 acc 0.797 | val loss 1.700 acc 0.382 | test acc 0.800
+  epoch   4 | train loss 1.665 acc 0.891 | val loss 1.450 acc 0.441 | test acc 0.600
+  epoch   5 | train loss 1.324 acc 0.917 | val loss 1.473 acc 0.500 | test acc 0.800
+  epoch   6 | train loss 0.998 acc 0.969 | val loss 1.232 acc 0.529 | test acc 0.600
+  epoch   7 | train loss 0.754 acc 0.995 | val loss 1.829 acc 0.353 | test acc 0.600
+  epoch   8 | train loss 0.535 acc 0.990 | val loss 1.383 acc 0.500 | test acc 0.600
+  epoch   9 | train loss 0.344 acc 1.000 | val loss 1.554 acc 0.471 | test acc 0.600
+  epoch  10 | train loss 0.213 acc 1.000 | val loss 2.090 acc 0.382 | test acc 0.800
+  epoch  11 | train loss 0.121 acc 1.000 | val loss 1.805 acc 0.500 | test acc 0.800
+  epoch  12 | train loss 0.067 acc 1.000 | val loss 2.283 acc 0.412 | test acc 0.600
+  epoch  13 | train loss 0.043 acc 1.000 | val loss 1.850 acc 0.559 | test acc 0.600
+  epoch  14 | train loss 0.028 acc 1.000 | val loss 1.995 acc 0.471 | test acc 0.600
+  epoch  15 | train loss 0.016 acc 1.000 | val loss 2.314 acc 0.412 | test acc 0.800
+  epoch  16 | train loss 0.012 acc 1.000 | val loss 2.120 acc 0.471 | test acc 0.600
+  early stopping at epoch 16 (best val_loss 1.2325 at epoch 6)
+  -> test acc=0.6000, macro-F1=0.5833 (epochs run 16, best epoch 6, early-stopped)
+*** fold 5/26 — held-out subject 5 ***
+  validation subjects: [12, 13, 17] (54 sequences); training on 22 subjects (172 sequences)
+  FCI learned 11 edges on 180 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 2.993 acc 0.431 | val loss 1.566 acc 0.204 | test acc 0.579
+  epoch   2 | train loss 2.528 acc 0.544 | val loss 1.196 acc 0.500 | test acc 0.526
+  epoch   3 | train loss 2.064 acc 0.738 | val loss 1.189 acc 0.500 | test acc 0.579
+  epoch   4 | train loss 1.689 acc 0.863 | val loss 1.374 acc 0.407 | test acc 0.684
+  epoch   5 | train loss 1.387 acc 0.950 | val loss 1.355 acc 0.352 | test acc 0.632
+  epoch   6 | train loss 1.117 acc 0.981 | val loss 1.643 acc 0.389 | test acc 0.632
+  epoch   7 | train loss 0.886 acc 0.994 | val loss 1.706 acc 0.389 | test acc 0.632
+  epoch   8 | train loss 0.663 acc 1.000 | val loss 1.503 acc 0.519 | test acc 0.474
+  epoch   9 | train loss 0.477 acc 1.000 | val loss 1.793 acc 0.444 | test acc 0.632
+  epoch  10 | train loss 0.316 acc 1.000 | val loss 2.248 acc 0.352 | test acc 0.579
+  epoch  11 | train loss 0.197 acc 1.000 | val loss 2.114 acc 0.426 | test acc 0.579
+  epoch  12 | train loss 0.111 acc 1.000 | val loss 3.022 acc 0.333 | test acc 0.684
+  epoch  13 | train loss 0.067 acc 1.000 | val loss 2.219 acc 0.444 | test acc 0.526
+  early stopping at epoch 13 (best val_loss 1.1889 at epoch 3)
+  -> test acc=0.5789, macro-F1=0.3178 (epochs run 13, best epoch 3, early-stopped)
+*** fold 6/26 — held-out subject 6 ***
+  validation subjects: [1, 7, 10] (31 sequences); training on 22 subjects (209 sequences)
+  FCI learned 11 edges on 218 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.098 acc 0.365 | val loss 1.251 acc 0.516 | test acc 0.200
+  epoch   2 | train loss 2.695 acc 0.516 | val loss 0.680 acc 0.742 | test acc 0.200
+  epoch   3 | train loss 2.359 acc 0.620 | val loss 0.872 acc 0.742 | test acc 0.400
+  epoch   4 | train loss 2.123 acc 0.688 | val loss 0.756 acc 0.645 | test acc 0.400
+  epoch   5 | train loss 1.744 acc 0.823 | val loss 0.816 acc 0.452 | test acc 0.400
+  epoch   6 | train loss 1.342 acc 0.906 | val loss 0.866 acc 0.419 | test acc 0.400
+  epoch   7 | train loss 1.043 acc 0.943 | val loss 0.808 acc 0.645 | test acc 0.400
+  epoch   8 | train loss 0.829 acc 0.969 | val loss 0.783 acc 0.677 | test acc 0.400
+  epoch   9 | train loss 0.551 acc 0.995 | val loss 0.839 acc 0.710 | test acc 0.400
+  epoch  10 | train loss 0.381 acc 1.000 | val loss 0.846 acc 0.742 | test acc 0.400
+  epoch  11 | train loss 0.229 acc 1.000 | val loss 0.871 acc 0.613 | test acc 0.600
+  epoch  12 | train loss 0.146 acc 1.000 | val loss 0.925 acc 0.677 | test acc 0.600
+  early stopping at epoch 12 (best val_loss 0.6799 at epoch 2)
+  -> test acc=0.2000, macro-F1=0.0833 (epochs run 12, best epoch 2, early-stopped)
+*** fold 7/26 — held-out subject 7 ***
+  validation subjects: [1, 5, 19] (43 sequences); training on 22 subjects (193 sequences)
+  FCI learned 11 edges on 202 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.169 acc 0.339 | val loss 1.530 acc 0.233 | test acc 0.778
+  epoch   2 | train loss 2.854 acc 0.396 | val loss 1.475 acc 0.395 | test acc 0.444
+  epoch   3 | train loss 2.636 acc 0.505 | val loss 1.471 acc 0.233 | test acc 0.667
+  epoch   4 | train loss 2.323 acc 0.625 | val loss 1.250 acc 0.488 | test acc 0.444
+  epoch   5 | train loss 1.920 acc 0.729 | val loss 1.294 acc 0.395 | test acc 0.333
+  epoch   6 | train loss 1.546 acc 0.865 | val loss 1.242 acc 0.488 | test acc 0.667
+  epoch   7 | train loss 1.209 acc 0.927 | val loss 1.201 acc 0.605 | test acc 0.444
+  epoch   8 | train loss 0.913 acc 0.964 | val loss 1.213 acc 0.581 | test acc 0.667
+  epoch   9 | train loss 0.633 acc 0.984 | val loss 1.502 acc 0.419 | test acc 0.556
+  epoch  10 | train loss 0.558 acc 0.984 | val loss 1.099 acc 0.558 | test acc 0.444
+  epoch  11 | train loss 0.361 acc 0.995 | val loss 1.312 acc 0.535 | test acc 0.444
+  epoch  12 | train loss 0.261 acc 0.995 | val loss 1.449 acc 0.558 | test acc 0.667
+  epoch  13 | train loss 0.161 acc 1.000 | val loss 1.151 acc 0.628 | test acc 0.444
+  epoch  14 | train loss 0.102 acc 1.000 | val loss 1.238 acc 0.581 | test acc 0.444
+  epoch  15 | train loss 0.063 acc 1.000 | val loss 1.500 acc 0.488 | test acc 0.556
+  epoch  16 | train loss 0.043 acc 1.000 | val loss 1.384 acc 0.581 | test acc 0.333
+  epoch  17 | train loss 0.024 acc 1.000 | val loss 1.221 acc 0.651 | test acc 0.444
+  epoch  18 | train loss 0.018 acc 1.000 | val loss 1.307 acc 0.605 | test acc 0.556
+  epoch  19 | train loss 0.011 acc 1.000 | val loss 1.362 acc 0.605 | test acc 0.444
+  epoch  20 | train loss 0.008 acc 1.000 | val loss 1.399 acc 0.605 | test acc 0.333
+  early stopping at epoch 20 (best val_loss 1.0994 at epoch 10)
+  -> test acc=0.4444, macro-F1=0.4156 (epochs run 20, best epoch 10, early-stopped)
+*** fold 8/26 — held-out subject 8 ***
+  validation subjects: [10, 12, 13] (33 sequences); training on 22 subjects (209 sequences)
+  FCI learned 11 edges on 218 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.102 acc 0.333 | val loss 1.250 acc 0.545 | test acc 0.667
+  epoch   2 | train loss 2.806 acc 0.427 | val loss 1.227 acc 0.273 | test acc 0.000
+  epoch   3 | train loss 2.352 acc 0.661 | val loss 0.999 acc 0.515 | test acc 0.333
+  epoch   4 | train loss 2.002 acc 0.755 | val loss 0.803 acc 0.545 | test acc 0.333
+  epoch   5 | train loss 1.607 acc 0.802 | val loss 0.777 acc 0.727 | test acc 0.667
+  epoch   6 | train loss 1.340 acc 0.932 | val loss 0.799 acc 0.818 | test acc 0.333
+  epoch   7 | train loss 1.100 acc 0.932 | val loss 0.686 acc 0.636 | test acc 0.333
+  epoch   8 | train loss 0.864 acc 0.984 | val loss 0.983 acc 0.485 | test acc 0.667
+  epoch   9 | train loss 0.586 acc 0.995 | val loss 0.895 acc 0.636 | test acc 0.333
+  epoch  10 | train loss 0.412 acc 1.000 | val loss 0.901 acc 0.606 | test acc 0.333
+  epoch  11 | train loss 0.266 acc 1.000 | val loss 0.858 acc 0.667 | test acc 0.333
+  epoch  12 | train loss 0.176 acc 1.000 | val loss 0.972 acc 0.667 | test acc 0.333
+  epoch  13 | train loss 0.120 acc 1.000 | val loss 1.538 acc 0.515 | test acc 0.333
+  epoch  14 | train loss 0.065 acc 1.000 | val loss 0.999 acc 0.576 | test acc 0.333
+  epoch  15 | train loss 0.041 acc 1.000 | val loss 1.090 acc 0.606 | test acc 0.333
+  epoch  16 | train loss 0.028 acc 1.000 | val loss 1.011 acc 0.576 | test acc 0.333
+  epoch  17 | train loss 0.018 acc 1.000 | val loss 1.019 acc 0.576 | test acc 0.333
+  early stopping at epoch 17 (best val_loss 0.6857 at epoch 7)
+  -> test acc=0.3333, macro-F1=0.1667 (epochs run 17, best epoch 7, early-stopped)
+*** fold 9/26 — held-out subject 9 ***
+  validation subjects: [1, 5, 13] (36 sequences); training on 22 subjects (196 sequences)
+  FCI learned 11 edges on 205 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.084 acc 0.276 | val loss 1.266 acc 0.500 | test acc 0.154
+  epoch   2 | train loss 2.716 acc 0.432 | val loss 1.152 acc 0.500 | test acc 0.077
+  epoch   3 | train loss 2.280 acc 0.609 | val loss 1.016 acc 0.639 | test acc 0.538
+  epoch   4 | train loss 1.848 acc 0.776 | val loss 1.081 acc 0.639 | test acc 0.308
+  epoch   5 | train loss 1.461 acc 0.854 | val loss 1.074 acc 0.639 | test acc 0.615
+  epoch   6 | train loss 1.177 acc 0.927 | val loss 1.372 acc 0.500 | test acc 0.615
+  epoch   7 | train loss 0.938 acc 0.969 | val loss 1.492 acc 0.417 | test acc 0.462
+  epoch   8 | train loss 0.704 acc 0.979 | val loss 0.985 acc 0.750 | test acc 0.462
+  epoch   9 | train loss 0.476 acc 1.000 | val loss 1.047 acc 0.722 | test acc 0.769
+  epoch  10 | train loss 0.355 acc 0.990 | val loss 2.028 acc 0.361 | test acc 0.615
+  epoch  11 | train loss 0.219 acc 0.995 | val loss 1.500 acc 0.500 | test acc 0.615
+  epoch  12 | train loss 0.135 acc 1.000 | val loss 1.471 acc 0.667 | test acc 0.462
+  epoch  13 | train loss 0.084 acc 1.000 | val loss 1.791 acc 0.500 | test acc 0.538
+  epoch  14 | train loss 0.049 acc 1.000 | val loss 1.437 acc 0.694 | test acc 0.538
+  epoch  15 | train loss 0.028 acc 1.000 | val loss 1.565 acc 0.611 | test acc 0.692
+  epoch  16 | train loss 0.018 acc 1.000 | val loss 1.732 acc 0.583 | test acc 0.692
+  epoch  17 | train loss 0.013 acc 1.000 | val loss 1.574 acc 0.583 | test acc 0.615
+  epoch  18 | train loss 0.009 acc 1.000 | val loss 1.550 acc 0.611 | test acc 0.615
+  early stopping at epoch 18 (best val_loss 0.9846 at epoch 8)
+  -> test acc=0.4615, macro-F1=0.4040 (epochs run 18, best epoch 8, early-stopped)
+*** fold 10/26 — held-out subject 10 ***
+  validation subjects: [7, 19, 20] (35 sequences); training on 22 subjects (197 sequences)
+  FCI learned 11 edges on 205 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.145 acc 0.349 | val loss 1.298 acc 0.400 | test acc 0.923
+  epoch   2 | train loss 2.767 acc 0.458 | val loss 1.323 acc 0.314 | test acc 0.385
+  epoch   3 | train loss 2.333 acc 0.630 | val loss 1.354 acc 0.400 | test acc 0.385
+  epoch   4 | train loss 1.880 acc 0.828 | val loss 1.244 acc 0.400 | test acc 0.846
+  epoch   5 | train loss 1.506 acc 0.901 | val loss 1.464 acc 0.286 | test acc 0.769
+  epoch   6 | train loss 1.143 acc 0.974 | val loss 1.368 acc 0.371 | test acc 0.923
+  epoch   7 | train loss 0.821 acc 1.000 | val loss 1.582 acc 0.400 | test acc 0.923
+  epoch   8 | train loss 0.548 acc 1.000 | val loss 1.665 acc 0.400 | test acc 0.923
+  epoch   9 | train loss 0.347 acc 1.000 | val loss 1.702 acc 0.429 | test acc 0.923
+  epoch  10 | train loss 0.206 acc 1.000 | val loss 1.667 acc 0.457 | test acc 0.923
+  epoch  11 | train loss 0.104 acc 1.000 | val loss 1.811 acc 0.457 | test acc 0.923
+  epoch  12 | train loss 0.059 acc 1.000 | val loss 1.873 acc 0.514 | test acc 0.923
+  epoch  13 | train loss 0.033 acc 1.000 | val loss 1.714 acc 0.514 | test acc 0.846
+  epoch  14 | train loss 0.019 acc 1.000 | val loss 1.901 acc 0.429 | test acc 0.923
+  early stopping at epoch 14 (best val_loss 1.2441 at epoch 4)
+  -> test acc=0.8462, macro-F1=0.4583 (epochs run 14, best epoch 4, early-stopped)
+*** fold 11/26 — held-out subject 11 ***
+  validation subjects: [1, 9, 10] (35 sequences); training on 22 subjects (200 sequences)
+  FCI learned 9 edges on 208 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.114 acc 0.339 | val loss 1.249 acc 0.629 | test acc 0.600
+  epoch   2 | train loss 2.807 acc 0.438 | val loss 1.367 acc 0.171 | test acc 0.500
+  epoch   3 | train loss 2.421 acc 0.562 | val loss 0.836 acc 0.486 | test acc 0.600
+  epoch   4 | train loss 1.965 acc 0.729 | val loss 0.813 acc 0.514 | test acc 0.500
+  epoch   5 | train loss 1.529 acc 0.896 | val loss 0.689 acc 0.743 | test acc 0.600
+  epoch   6 | train loss 1.171 acc 0.984 | val loss 0.726 acc 0.571 | test acc 0.600
+  epoch   7 | train loss 0.927 acc 0.974 | val loss 0.674 acc 0.657 | test acc 0.600
+  epoch   8 | train loss 0.648 acc 0.995 | val loss 0.922 acc 0.514 | test acc 0.500
+  epoch   9 | train loss 0.445 acc 1.000 | val loss 0.869 acc 0.514 | test acc 0.400
+  epoch  10 | train loss 0.275 acc 1.000 | val loss 0.873 acc 0.543 | test acc 0.500
+  epoch  11 | train loss 0.164 acc 1.000 | val loss 0.771 acc 0.657 | test acc 0.300
+  epoch  12 | train loss 0.103 acc 1.000 | val loss 1.149 acc 0.457 | test acc 0.400
+  epoch  13 | train loss 0.063 acc 1.000 | val loss 0.574 acc 0.771 | test acc 0.400
+  epoch  14 | train loss 0.035 acc 1.000 | val loss 1.042 acc 0.571 | test acc 0.300
+  epoch  15 | train loss 0.024 acc 1.000 | val loss 0.698 acc 0.686 | test acc 0.400
+  epoch  16 | train loss 0.015 acc 1.000 | val loss 0.676 acc 0.714 | test acc 0.300
+  epoch  17 | train loss 0.010 acc 1.000 | val loss 1.052 acc 0.571 | test acc 0.400
+  epoch  18 | train loss 0.007 acc 1.000 | val loss 0.828 acc 0.714 | test acc 0.300
+  epoch  19 | train loss 0.005 acc 1.000 | val loss 0.782 acc 0.686 | test acc 0.400
+  epoch  20 | train loss 0.004 acc 1.000 | val loss 0.828 acc 0.686 | test acc 0.400
+  epoch  21 | train loss 0.003 acc 1.000 | val loss 0.829 acc 0.714 | test acc 0.300
+  epoch  22 | train loss 0.003 acc 1.000 | val loss 0.821 acc 0.714 | test acc 0.300
+  epoch  23 | train loss 0.002 acc 1.000 | val loss 0.786 acc 0.714 | test acc 0.300
+  early stopping at epoch 23 (best val_loss 0.5738 at epoch 13)
+  -> test acc=0.4000, macro-F1=0.3750 (epochs run 23, best epoch 13, early-stopped)
+*** fold 12/26 — held-out subject 12 ***
+  validation subjects: [5, 10, 23] (44 sequences); training on 22 subjects (189 sequences)
+  FCI learned 11 edges on 198 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.132 acc 0.344 | val loss 1.173 acc 0.636 | test acc 0.167
+  epoch   2 | train loss 2.902 acc 0.287 | val loss 1.222 acc 0.318 | test acc 0.250
+  epoch   3 | train loss 2.644 acc 0.444 | val loss 1.087 acc 0.432 | test acc 0.500
+  epoch   4 | train loss 2.269 acc 0.606 | val loss 1.168 acc 0.409 | test acc 0.333
+  epoch   5 | train loss 2.051 acc 0.588 | val loss 1.306 acc 0.341 | test acc 0.667
+  epoch   6 | train loss 1.820 acc 0.719 | val loss 1.146 acc 0.500 | test acc 0.333
+  epoch   7 | train loss 1.568 acc 0.825 | val loss 1.617 acc 0.273 | test acc 0.500
+  epoch   8 | train loss 1.254 acc 0.881 | val loss 1.292 acc 0.591 | test acc 0.500
+  epoch   9 | train loss 0.981 acc 0.950 | val loss 1.383 acc 0.500 | test acc 0.417
+  epoch  10 | train loss 0.755 acc 0.969 | val loss 1.413 acc 0.614 | test acc 0.417
+  epoch  11 | train loss 0.602 acc 0.988 | val loss 2.260 acc 0.295 | test acc 0.583
+  epoch  12 | train loss 0.458 acc 0.988 | val loss 1.536 acc 0.545 | test acc 0.333
+  epoch  13 | train loss 0.299 acc 1.000 | val loss 1.599 acc 0.568 | test acc 0.417
+  early stopping at epoch 13 (best val_loss 1.0869 at epoch 3)
+  -> test acc=0.5000, macro-F1=0.4571 (epochs run 13, best epoch 3, early-stopped)
+*** fold 13/26 — held-out subject 13 ***
+  validation subjects: [5, 9, 12] (44 sequences); training on 22 subjects (193 sequences)
+  FCI learned 11 edges on 202 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.087 acc 0.344 | val loss 1.525 acc 0.364 | test acc 0.750
+  epoch   2 | train loss 2.754 acc 0.401 | val loss 1.381 acc 0.273 | test acc 0.500
+  epoch   3 | train loss 2.366 acc 0.583 | val loss 1.312 acc 0.318 | test acc 0.375
+  epoch   4 | train loss 1.986 acc 0.740 | val loss 1.295 acc 0.386 | test acc 0.250
+  epoch   5 | train loss 1.633 acc 0.823 | val loss 1.260 acc 0.500 | test acc 0.750
+  epoch   6 | train loss 1.309 acc 0.880 | val loss 1.432 acc 0.523 | test acc 0.375
+  epoch   7 | train loss 1.038 acc 0.953 | val loss 1.268 acc 0.523 | test acc 0.625
+  epoch   8 | train loss 0.729 acc 1.000 | val loss 1.356 acc 0.523 | test acc 0.750
+  epoch   9 | train loss 0.477 acc 1.000 | val loss 1.401 acc 0.568 | test acc 0.875
+  epoch  10 | train loss 0.309 acc 1.000 | val loss 1.565 acc 0.523 | test acc 0.750
+  epoch  11 | train loss 0.184 acc 1.000 | val loss 1.687 acc 0.523 | test acc 0.750
+  epoch  12 | train loss 0.106 acc 1.000 | val loss 1.820 acc 0.455 | test acc 0.250
+  epoch  13 | train loss 0.070 acc 1.000 | val loss 1.813 acc 0.568 | test acc 0.750
+  epoch  14 | train loss 0.039 acc 1.000 | val loss 2.190 acc 0.477 | test acc 0.375
+  epoch  15 | train loss 0.024 acc 1.000 | val loss 2.125 acc 0.386 | test acc 0.500
+  early stopping at epoch 15 (best val_loss 1.2599 at epoch 5)
+  -> test acc=0.7500, macro-F1=0.5000 (epochs run 15, best epoch 5, early-stopped)
+*** fold 14/26 — held-out subject 14 ***
+  validation subjects: [1, 7, 13] (26 sequences); training on 22 subjects (215 sequences)
+  FCI learned 11 edges on 225 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.151 acc 0.370 | val loss 1.286 acc 0.500 | test acc 0.000
+  epoch   2 | train loss 2.786 acc 0.427 | val loss 1.052 acc 0.538 | test acc 0.250
+  epoch   3 | train loss 2.408 acc 0.557 | val loss 1.072 acc 0.500 | test acc 0.750
+  epoch   4 | train loss 2.057 acc 0.714 | val loss 0.971 acc 0.615 | test acc 0.250
+  epoch   5 | train loss 1.689 acc 0.854 | val loss 0.933 acc 0.615 | test acc 0.000
+  epoch   6 | train loss 1.346 acc 0.932 | val loss 1.044 acc 0.615 | test acc 0.500
+  epoch   7 | train loss 1.143 acc 0.948 | val loss 0.882 acc 0.615 | test acc 0.500
+  epoch   8 | train loss 0.871 acc 0.995 | val loss 0.773 acc 0.654 | test acc 0.250
+  epoch   9 | train loss 0.632 acc 1.000 | val loss 1.081 acc 0.692 | test acc 0.250
+  epoch  10 | train loss 0.438 acc 1.000 | val loss 1.161 acc 0.692 | test acc 0.250
+  epoch  11 | train loss 0.337 acc 1.000 | val loss 1.117 acc 0.615 | test acc 0.000
+  epoch  12 | train loss 0.227 acc 1.000 | val loss 0.719 acc 0.692 | test acc 0.250
+  epoch  13 | train loss 0.141 acc 1.000 | val loss 0.964 acc 0.654 | test acc 0.250
+  epoch  14 | train loss 0.094 acc 1.000 | val loss 0.823 acc 0.731 | test acc 0.250
+  epoch  15 | train loss 0.060 acc 1.000 | val loss 0.826 acc 0.692 | test acc 0.250
+  epoch  16 | train loss 0.037 acc 1.000 | val loss 0.954 acc 0.615 | test acc 0.250
+  epoch  17 | train loss 0.022 acc 1.000 | val loss 0.806 acc 0.654 | test acc 0.250
+  epoch  18 | train loss 0.016 acc 1.000 | val loss 0.772 acc 0.731 | test acc 0.250
+  epoch  19 | train loss 0.011 acc 1.000 | val loss 0.826 acc 0.692 | test acc 0.250
+  epoch  20 | train loss 0.008 acc 1.000 | val loss 0.827 acc 0.731 | test acc 0.250
+  epoch  21 | train loss 0.006 acc 1.000 | val loss 0.815 acc 0.731 | test acc 0.250
+  epoch  22 | train loss 0.005 acc 1.000 | val loss 0.845 acc 0.731 | test acc 0.250
+  early stopping at epoch 22 (best val_loss 0.7188 at epoch 12)
+  -> test acc=0.2500, macro-F1=0.1667 (epochs run 22, best epoch 12, early-stopped)
+*** fold 15/26 — held-out subject 15 ***
+  validation subjects: [2, 9, 23] (38 sequences); training on 22 subjects (204 sequences)
+  FCI learned 11 edges on 213 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.048 acc 0.370 | val loss 1.820 acc 0.263 | test acc 0.000
+  epoch   2 | train loss 2.654 acc 0.526 | val loss 1.646 acc 0.237 | test acc 0.333
+  epoch   3 | train loss 2.347 acc 0.526 | val loss 1.943 acc 0.211 | test acc 1.000
+  epoch   4 | train loss 1.940 acc 0.740 | val loss 1.873 acc 0.237 | test acc 1.000
+  epoch   5 | train loss 1.553 acc 0.844 | val loss 1.791 acc 0.421 | test acc 1.000
+  epoch   6 | train loss 1.280 acc 0.927 | val loss 1.577 acc 0.474 | test acc 1.000
+  epoch   7 | train loss 0.952 acc 0.990 | val loss 1.940 acc 0.421 | test acc 1.000
+  epoch   8 | train loss 0.700 acc 1.000 | val loss 2.018 acc 0.447 | test acc 1.000
+  epoch   9 | train loss 0.562 acc 0.995 | val loss 2.187 acc 0.421 | test acc 1.000
+  epoch  10 | train loss 0.350 acc 1.000 | val loss 2.177 acc 0.526 | test acc 1.000
+  epoch  11 | train loss 0.248 acc 1.000 | val loss 2.172 acc 0.500 | test acc 1.000
+  epoch  12 | train loss 0.165 acc 1.000 | val loss 2.174 acc 0.500 | test acc 1.000
+  epoch  13 | train loss 0.104 acc 1.000 | val loss 2.407 acc 0.474 | test acc 1.000
+  epoch  14 | train loss 0.067 acc 1.000 | val loss 2.403 acc 0.474 | test acc 1.000
+  epoch  15 | train loss 0.053 acc 1.000 | val loss 2.337 acc 0.474 | test acc 1.000
+  epoch  16 | train loss 0.042 acc 1.000 | val loss 2.980 acc 0.447 | test acc 0.667
+  early stopping at epoch 16 (best val_loss 1.5775 at epoch 6)
+  -> test acc=1.0000, macro-F1=1.0000 (epochs run 16, best epoch 6, early-stopped)
+*** fold 16/26 — held-out subject 16 ***
+  validation subjects: [10, 11, 20] (34 sequences); training on 22 subjects (208 sequences)
+  FCI learned 9 edges on 216 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.119 acc 0.333 | val loss 0.972 acc 0.824 | test acc 0.333
+  epoch   2 | train loss 2.662 acc 0.516 | val loss 0.777 acc 0.676 | test acc 0.333
+  epoch   3 | train loss 2.148 acc 0.740 | val loss 0.932 acc 0.412 | test acc 0.000
+  epoch   4 | train loss 1.623 acc 0.865 | val loss 0.766 acc 0.647 | test acc 0.333
+  epoch   5 | train loss 1.230 acc 0.927 | val loss 0.919 acc 0.500 | test acc 0.000
+  epoch   6 | train loss 0.897 acc 0.995 | val loss 0.692 acc 0.735 | test acc 0.333
+  epoch   7 | train loss 0.624 acc 0.995 | val loss 1.022 acc 0.559 | test acc 0.000
+  epoch   8 | train loss 0.403 acc 1.000 | val loss 1.293 acc 0.559 | test acc 0.000
+  epoch   9 | train loss 0.314 acc 1.000 | val loss 0.900 acc 0.618 | test acc 0.000
+  epoch  10 | train loss 0.194 acc 0.995 | val loss 0.892 acc 0.706 | test acc 0.333
+  epoch  11 | train loss 0.115 acc 0.995 | val loss 1.672 acc 0.500 | test acc 0.000
+  epoch  12 | train loss 0.070 acc 1.000 | val loss 0.832 acc 0.706 | test acc 0.333
+  epoch  13 | train loss 0.038 acc 1.000 | val loss 1.113 acc 0.647 | test acc 0.000
+  epoch  14 | train loss 0.026 acc 1.000 | val loss 1.045 acc 0.647 | test acc 0.333
+  epoch  15 | train loss 0.017 acc 1.000 | val loss 1.051 acc 0.676 | test acc 0.000
+  epoch  16 | train loss 0.010 acc 1.000 | val loss 1.289 acc 0.647 | test acc 0.000
+  early stopping at epoch 16 (best val_loss 0.6923 at epoch 6)
+  -> test acc=0.3333, macro-F1=0.2500 (epochs run 16, best epoch 6, early-stopped)
+*** fold 17/26 — held-out subject 17 ***
+  validation subjects: [11, 12, 20] (33 sequences); training on 22 subjects (178 sequences)
+  FCI learned 11 edges on 186 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.011 acc 0.438 | val loss 1.328 acc 0.485 | test acc 0.088
+  epoch   2 | train loss 2.699 acc 0.475 | val loss 1.137 acc 0.485 | test acc 0.118
+  epoch   3 | train loss 2.417 acc 0.575 | val loss 1.146 acc 0.606 | test acc 0.206
+  epoch   4 | train loss 2.058 acc 0.756 | val loss 1.069 acc 0.515 | test acc 0.471
+  epoch   5 | train loss 1.718 acc 0.856 | val loss 0.895 acc 0.636 | test acc 0.353
+  epoch   6 | train loss 1.417 acc 0.931 | val loss 0.943 acc 0.667 | test acc 0.324
+  epoch   7 | train loss 1.093 acc 0.969 | val loss 1.095 acc 0.576 | test acc 0.294
+  epoch   8 | train loss 0.838 acc 1.000 | val loss 1.109 acc 0.606 | test acc 0.324
+  epoch   9 | train loss 0.638 acc 1.000 | val loss 1.406 acc 0.606 | test acc 0.471
+  epoch  10 | train loss 0.416 acc 1.000 | val loss 1.551 acc 0.606 | test acc 0.382
+  epoch  11 | train loss 0.253 acc 1.000 | val loss 1.825 acc 0.606 | test acc 0.471
+  epoch  12 | train loss 0.170 acc 1.000 | val loss 1.877 acc 0.576 | test acc 0.529
+  epoch  13 | train loss 0.100 acc 1.000 | val loss 1.808 acc 0.515 | test acc 0.529
+  epoch  14 | train loss 0.057 acc 1.000 | val loss 2.009 acc 0.576 | test acc 0.382
+  epoch  15 | train loss 0.036 acc 1.000 | val loss 2.049 acc 0.606 | test acc 0.500
+  early stopping at epoch 15 (best val_loss 0.8952 at epoch 5)
+  -> test acc=0.3529, macro-F1=0.4750 (epochs run 15, best epoch 5, early-stopped)
+*** fold 18/26 — held-out subject 18 ***
+  validation subjects: [11, 19, 26] (41 sequences); training on 22 subjects (201 sequences)
+  FCI learned 10 edges on 209 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.146 acc 0.318 | val loss 1.330 acc 0.415 | test acc 1.000
+  epoch   2 | train loss 2.832 acc 0.432 | val loss 1.371 acc 0.293 | test acc 1.000
+  epoch   3 | train loss 2.471 acc 0.604 | val loss 1.134 acc 0.488 | test acc 1.000
+  epoch   4 | train loss 2.019 acc 0.740 | val loss 0.924 acc 0.488 | test acc 1.000
+  epoch   5 | train loss 1.629 acc 0.865 | val loss 1.023 acc 0.463 | test acc 1.000
+  epoch   6 | train loss 1.397 acc 0.870 | val loss 1.172 acc 0.439 | test acc 1.000
+  epoch   7 | train loss 1.057 acc 0.969 | val loss 1.412 acc 0.439 | test acc 1.000
+  epoch   8 | train loss 0.755 acc 0.990 | val loss 1.194 acc 0.512 | test acc 1.000
+  epoch   9 | train loss 0.555 acc 0.995 | val loss 1.547 acc 0.463 | test acc 1.000
+  epoch  10 | train loss 0.362 acc 0.995 | val loss 1.263 acc 0.488 | test acc 1.000
+  epoch  11 | train loss 0.255 acc 1.000 | val loss 1.283 acc 0.512 | test acc 1.000
+  epoch  12 | train loss 0.146 acc 1.000 | val loss 1.562 acc 0.488 | test acc 1.000
+  epoch  13 | train loss 0.094 acc 1.000 | val loss 1.235 acc 0.561 | test acc 1.000
+  epoch  14 | train loss 0.060 acc 1.000 | val loss 1.494 acc 0.537 | test acc 1.000
+  early stopping at epoch 14 (best val_loss 0.9241 at epoch 4)
+  -> test acc=1.0000, macro-F1=1.0000 (epochs run 14, best epoch 4, early-stopped)
+*** fold 19/26 — held-out subject 19 ***
+  validation subjects: [1, 7, 10] (31 sequences); training on 22 subjects (199 sequences)
+  FCI learned 11 edges on 207 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.160 acc 0.307 | val loss 1.160 acc 0.226 | test acc 0.333
+  epoch   2 | train loss 2.710 acc 0.453 | val loss 0.784 acc 0.742 | test acc 0.467
+  epoch   3 | train loss 2.241 acc 0.672 | val loss 0.907 acc 0.452 | test acc 0.467
+  epoch   4 | train loss 1.888 acc 0.750 | val loss 0.772 acc 0.645 | test acc 0.533
+  epoch   5 | train loss 1.548 acc 0.885 | val loss 1.036 acc 0.387 | test acc 0.667
+  epoch   6 | train loss 1.257 acc 0.958 | val loss 0.618 acc 0.710 | test acc 0.600
+  epoch   7 | train loss 0.987 acc 0.979 | val loss 0.607 acc 0.710 | test acc 0.733
+  epoch   8 | train loss 0.756 acc 1.000 | val loss 0.597 acc 0.774 | test acc 0.800
+  epoch   9 | train loss 0.518 acc 1.000 | val loss 0.616 acc 0.645 | test acc 0.667
+  epoch  10 | train loss 0.357 acc 1.000 | val loss 0.709 acc 0.677 | test acc 0.800
+  epoch  11 | train loss 0.229 acc 1.000 | val loss 0.987 acc 0.742 | test acc 0.600
+  epoch  12 | train loss 0.147 acc 1.000 | val loss 0.828 acc 0.774 | test acc 0.600
+  epoch  13 | train loss 0.092 acc 1.000 | val loss 0.652 acc 0.677 | test acc 0.733
+  epoch  14 | train loss 0.053 acc 1.000 | val loss 0.935 acc 0.774 | test acc 0.600
+  epoch  15 | train loss 0.033 acc 1.000 | val loss 0.691 acc 0.710 | test acc 0.733
+  epoch  16 | train loss 0.019 acc 1.000 | val loss 0.749 acc 0.677 | test acc 0.667
+  epoch  17 | train loss 0.012 acc 1.000 | val loss 1.001 acc 0.774 | test acc 0.600
+  epoch  18 | train loss 0.009 acc 1.000 | val loss 0.918 acc 0.710 | test acc 0.667
+  early stopping at epoch 18 (best val_loss 0.5966 at epoch 8)
+  -> test acc=0.8000, macro-F1=0.6214 (epochs run 18, best epoch 8, early-stopped)
+*** fold 20/26 — held-out subject 20 ***
+  validation subjects: [1, 2, 12] (34 sequences); training on 22 subjects (200 sequences)
+  FCI learned 10 edges on 210 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.076 acc 0.323 | val loss 1.512 acc 0.235 | test acc 0.727
+  epoch   2 | train loss 2.624 acc 0.458 | val loss 1.362 acc 0.294 | test acc 0.455
+  epoch   3 | train loss 2.115 acc 0.771 | val loss 1.210 acc 0.559 | test acc 0.636
+  epoch   4 | train loss 1.678 acc 0.854 | val loss 1.361 acc 0.471 | test acc 0.545
+  epoch   5 | train loss 1.331 acc 0.932 | val loss 1.256 acc 0.441 | test acc 0.364
+  epoch   6 | train loss 1.015 acc 0.995 | val loss 1.435 acc 0.324 | test acc 0.636
+  epoch   7 | train loss 0.787 acc 0.995 | val loss 1.429 acc 0.500 | test acc 0.364
+  epoch   8 | train loss 0.558 acc 1.000 | val loss 1.332 acc 0.500 | test acc 0.455
+  epoch   9 | train loss 0.347 acc 1.000 | val loss 1.445 acc 0.500 | test acc 0.455
+  epoch  10 | train loss 0.220 acc 1.000 | val loss 1.609 acc 0.471 | test acc 0.364
+  epoch  11 | train loss 0.119 acc 1.000 | val loss 1.696 acc 0.412 | test acc 0.455
+  epoch  12 | train loss 0.074 acc 1.000 | val loss 1.777 acc 0.471 | test acc 0.364
+  epoch  13 | train loss 0.039 acc 1.000 | val loss 1.726 acc 0.529 | test acc 0.364
+  early stopping at epoch 13 (best val_loss 1.2097 at epoch 3)
+  -> test acc=0.6364, macro-F1=0.2593 (epochs run 13, best epoch 3, early-stopped)
+*** fold 21/26 — held-out subject 21 ***
+  validation subjects: [5, 13, 26] (43 sequences); training on 22 subjects (200 sequences)
+  FCI learned 9 edges on 209 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.125 acc 0.323 | val loss 1.295 acc 0.349 | test acc 0.500
+  epoch   2 | train loss 2.692 acc 0.536 | val loss 1.264 acc 0.442 | test acc 0.500
+  epoch   3 | train loss 2.213 acc 0.682 | val loss 1.225 acc 0.395 | test acc 1.000
+  epoch   4 | train loss 1.761 acc 0.797 | val loss 1.685 acc 0.372 | test acc 1.000
+  epoch   5 | train loss 1.419 acc 0.870 | val loss 1.629 acc 0.256 | test acc 0.500
+  epoch   6 | train loss 1.112 acc 0.927 | val loss 1.508 acc 0.372 | test acc 1.000
+  epoch   7 | train loss 0.781 acc 0.984 | val loss 1.427 acc 0.349 | test acc 0.500
+  epoch   8 | train loss 0.549 acc 0.990 | val loss 1.969 acc 0.349 | test acc 0.500
+  epoch   9 | train loss 0.459 acc 0.969 | val loss 1.547 acc 0.488 | test acc 1.000
+  epoch  10 | train loss 0.288 acc 0.974 | val loss 1.410 acc 0.419 | test acc 1.000
+  epoch  11 | train loss 0.190 acc 1.000 | val loss 2.056 acc 0.419 | test acc 1.000
+  epoch  12 | train loss 0.109 acc 1.000 | val loss 1.860 acc 0.465 | test acc 1.000
+  epoch  13 | train loss 0.068 acc 1.000 | val loss 1.696 acc 0.465 | test acc 0.500
+  early stopping at epoch 13 (best val_loss 1.2255 at epoch 3)
+  -> test acc=1.0000, macro-F1=1.0000 (epochs run 13, best epoch 3, early-stopped)
+*** fold 22/26 — held-out subject 22 ***
+  validation subjects: [5, 11, 17] (63 sequences); training on 22 subjects (180 sequences)
+  FCI learned 11 edges on 188 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.090 acc 0.312 | val loss 1.421 acc 0.302 | test acc 0.000
+  epoch   2 | train loss 2.801 acc 0.394 | val loss 1.211 acc 0.476 | test acc 0.000
+  epoch   3 | train loss 2.335 acc 0.581 | val loss 1.158 acc 0.492 | test acc 0.000
+  epoch   4 | train loss 1.971 acc 0.731 | val loss 0.986 acc 0.603 | test acc 0.000
+  epoch   5 | train loss 1.646 acc 0.844 | val loss 1.129 acc 0.492 | test acc 1.000
+  epoch   6 | train loss 1.304 acc 0.944 | val loss 1.278 acc 0.492 | test acc 0.000
+  epoch   7 | train loss 1.111 acc 0.975 | val loss 1.052 acc 0.540 | test acc 1.000
+  epoch   8 | train loss 0.856 acc 0.981 | val loss 1.392 acc 0.492 | test acc 0.000
+  epoch   9 | train loss 0.674 acc 0.994 | val loss 1.088 acc 0.508 | test acc 1.000
+  epoch  10 | train loss 0.468 acc 1.000 | val loss 1.328 acc 0.492 | test acc 1.000
+  epoch  11 | train loss 0.347 acc 1.000 | val loss 1.197 acc 0.524 | test acc 1.000
+  epoch  12 | train loss 0.215 acc 1.000 | val loss 1.564 acc 0.508 | test acc 1.000
+  epoch  13 | train loss 0.152 acc 1.000 | val loss 1.527 acc 0.476 | test acc 1.000
+  epoch  14 | train loss 0.096 acc 1.000 | val loss 1.398 acc 0.540 | test acc 1.000
+  early stopping at epoch 14 (best val_loss 0.9855 at epoch 4)
+  -> test acc=0.0000, macro-F1=0.0000 (epochs run 14, best epoch 4, early-stopped)
+*** fold 23/26 — held-out subject 23 ***
+  validation subjects: [12, 20, 26] (39 sequences); training on 22 subjects (194 sequences)
+  FCI learned 11 edges on 203 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.123 acc 0.375 | val loss 1.304 acc 0.385 | test acc 0.333
+  epoch   2 | train loss 2.658 acc 0.490 | val loss 1.435 acc 0.256 | test acc 0.417
+  epoch   3 | train loss 2.213 acc 0.714 | val loss 1.103 acc 0.410 | test acc 0.667
+  epoch   4 | train loss 1.733 acc 0.854 | val loss 1.477 acc 0.333 | test acc 0.333
+  epoch   5 | train loss 1.409 acc 0.927 | val loss 1.451 acc 0.333 | test acc 0.333
+  epoch   6 | train loss 1.066 acc 1.000 | val loss 1.507 acc 0.359 | test acc 0.417
+  epoch   7 | train loss 0.834 acc 0.990 | val loss 1.713 acc 0.308 | test acc 0.333
+  epoch   8 | train loss 0.555 acc 1.000 | val loss 1.618 acc 0.410 | test acc 0.333
+  epoch   9 | train loss 0.355 acc 1.000 | val loss 1.698 acc 0.333 | test acc 0.500
+  epoch  10 | train loss 0.204 acc 1.000 | val loss 1.768 acc 0.359 | test acc 0.583
+  epoch  11 | train loss 0.110 acc 1.000 | val loss 2.137 acc 0.308 | test acc 0.500
+  epoch  12 | train loss 0.057 acc 1.000 | val loss 1.910 acc 0.410 | test acc 0.417
+  epoch  13 | train loss 0.033 acc 1.000 | val loss 1.853 acc 0.333 | test acc 0.417
+  early stopping at epoch 13 (best val_loss 1.1033 at epoch 3)
+  -> test acc=0.6667, macro-F1=0.6222 (epochs run 13, best epoch 3, early-stopped)
+*** fold 24/26 — held-out subject 24 ***
+  validation subjects: [1, 12, 23] (33 sequences); training on 22 subjects (205 sequences)
+  FCI learned 10 edges on 212 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.110 acc 0.375 | val loss 1.468 acc 0.303 | test acc 0.571
+  epoch   2 | train loss 2.712 acc 0.464 | val loss 1.243 acc 0.394 | test acc 0.571
+  epoch   3 | train loss 2.449 acc 0.547 | val loss 1.228 acc 0.394 | test acc 0.429
+  epoch   4 | train loss 2.138 acc 0.635 | val loss 1.076 acc 0.515 | test acc 0.143
+  epoch   5 | train loss 1.739 acc 0.802 | val loss 1.218 acc 0.485 | test acc 0.143
+  epoch   6 | train loss 1.420 acc 0.875 | val loss 1.246 acc 0.455 | test acc 0.429
+  epoch   7 | train loss 1.112 acc 0.938 | val loss 1.079 acc 0.545 | test acc 0.571
+  epoch   8 | train loss 0.818 acc 0.979 | val loss 1.129 acc 0.485 | test acc 0.429
+  epoch   9 | train loss 0.574 acc 1.000 | val loss 1.269 acc 0.485 | test acc 0.571
+  epoch  10 | train loss 0.404 acc 0.995 | val loss 1.561 acc 0.515 | test acc 0.571
+  epoch  11 | train loss 0.254 acc 1.000 | val loss 1.436 acc 0.485 | test acc 0.571
+  epoch  12 | train loss 0.139 acc 1.000 | val loss 1.501 acc 0.485 | test acc 0.571
+  epoch  13 | train loss 0.079 acc 1.000 | val loss 2.060 acc 0.485 | test acc 0.429
+  epoch  14 | train loss 0.047 acc 1.000 | val loss 1.545 acc 0.515 | test acc 0.571
+  early stopping at epoch 14 (best val_loss 1.0757 at epoch 4)
+  -> test acc=0.1429, macro-F1=0.0714 (epochs run 14, best epoch 4, early-stopped)
+*** fold 25/26 — held-out subject 25 ***
+  validation subjects: [1, 7, 23] (30 sequences); training on 22 subjects (208 sequences)
+  FCI learned 11 edges on 218 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.104 acc 0.370 | val loss 1.175 acc 0.467 | test acc 0.286
+  epoch   2 | train loss 2.562 acc 0.578 | val loss 1.142 acc 0.467 | test acc 0.286
+  epoch   3 | train loss 2.143 acc 0.714 | val loss 1.209 acc 0.433 | test acc 0.143
+  epoch   4 | train loss 1.693 acc 0.849 | val loss 1.251 acc 0.433 | test acc 0.571
+  epoch   5 | train loss 1.335 acc 0.938 | val loss 1.191 acc 0.467 | test acc 0.286
+  epoch   6 | train loss 1.019 acc 0.974 | val loss 1.088 acc 0.533 | test acc 0.571
+  epoch   7 | train loss 0.762 acc 0.990 | val loss 1.440 acc 0.400 | test acc 0.429
+  epoch   8 | train loss 0.536 acc 0.995 | val loss 1.771 acc 0.467 | test acc 0.571
+  epoch   9 | train loss 0.357 acc 1.000 | val loss 1.386 acc 0.533 | test acc 0.429
+  epoch  10 | train loss 0.202 acc 1.000 | val loss 1.630 acc 0.533 | test acc 0.571
+  epoch  11 | train loss 0.114 acc 1.000 | val loss 1.696 acc 0.567 | test acc 0.429
+  epoch  12 | train loss 0.067 acc 1.000 | val loss 1.688 acc 0.567 | test acc 0.429
+  epoch  13 | train loss 0.042 acc 1.000 | val loss 1.709 acc 0.600 | test acc 0.429
+  epoch  14 | train loss 0.021 acc 1.000 | val loss 1.708 acc 0.567 | test acc 0.429
+  epoch  15 | train loss 0.019 acc 1.000 | val loss 1.709 acc 0.567 | test acc 0.429
+  epoch  16 | train loss 0.013 acc 1.000 | val loss 1.731 acc 0.600 | test acc 0.429
+  early stopping at epoch 16 (best val_loss 1.0877 at epoch 6)
+  -> test acc=0.5714, macro-F1=0.5778 (epochs run 16, best epoch 6, early-stopped)
+*** fold 26/26 — held-out subject 26 ***
+  validation subjects: [1, 9, 12] (34 sequences); training on 22 subjects (195 sequences)
+  FCI learned 10 edges on 203 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  epoch   1 | train loss 3.181 acc 0.411 | val loss 1.582 acc 0.294 | test acc 0.250
+  epoch   2 | train loss 2.719 acc 0.495 | val loss 1.321 acc 0.441 | test acc 0.250
+  epoch   3 | train loss 2.272 acc 0.625 | val loss 1.083 acc 0.500 | test acc 0.188
+  epoch   4 | train loss 1.874 acc 0.781 | val loss 0.954 acc 0.500 | test acc 0.375
+  epoch   5 | train loss 1.609 acc 0.786 | val loss 0.904 acc 0.588 | test acc 0.500
+  epoch   6 | train loss 1.245 acc 0.901 | val loss 1.147 acc 0.559 | test acc 0.000
+  epoch   7 | train loss 0.873 acc 0.974 | val loss 1.027 acc 0.618 | test acc 0.125
+  epoch   8 | train loss 0.657 acc 1.000 | val loss 1.085 acc 0.588 | test acc 0.125
+  epoch   9 | train loss 0.438 acc 0.995 | val loss 1.208 acc 0.618 | test acc 0.125
+  epoch  10 | train loss 0.274 acc 1.000 | val loss 1.155 acc 0.618 | test acc 0.062
+  epoch  11 | train loss 0.166 acc 1.000 | val loss 1.014 acc 0.618 | test acc 0.375
+  epoch  12 | train loss 0.090 acc 1.000 | val loss 1.140 acc 0.588 | test acc 0.312
+  epoch  13 | train loss 0.075 acc 1.000 | val loss 1.088 acc 0.676 | test acc 0.250
+  epoch  14 | train loss 0.048 acc 1.000 | val loss 1.413 acc 0.647 | test acc 0.125
+  epoch  15 | train loss 0.031 acc 1.000 | val loss 1.161 acc 0.647 | test acc 0.250
+  early stopping at epoch 15 (best val_loss 0.9045 at epoch 5)
+  -> test acc=0.5000, macro-F1=0.2105 (epochs run 15, best epoch 5, early-stopped)
+
+LOSO mean acc: 0.5181 (std 0.2671), mean macro-F1: 0.4295
+Pooled over all 245 test samples: acc 0.5102, UAR 0.4603, UF1 0.4860
+Per-fold results: results_v2_fci.csv | per-epoch curves: results_v2_fci_epochs.csv | predictions: results_v2_fci_predictions.csv
+
+FCI graph stability across folds: {'stability_ratio': np.float64(0.29411764705882354), 'n_ever_present': 17, 'n_always_present': 5}
+FCI vs hand-designed graph — mean precision: 0.473, mean recall: 0.451

@@ -1,0 +1,2 @@
+subject,filename,action,detail
+16,EP01_08,skipped,"requested {'offset': 110}, but only 96 frames available — rerun with --clamp_to_last_frame to keep this sequence instead of skipping it"

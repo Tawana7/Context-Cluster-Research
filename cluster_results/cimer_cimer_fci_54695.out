@@ -1,0 +1,166 @@
+If for semantic segmentation, please install mmsegmentation first
+If for detection, please install mmdetection first
+Using device: cuda (NVIDIA GeForce RTX 3090)
+AU vocabulary (15 nodes): ['1', '2', '4', '5', '6', '7', '9', '10', '12', '14', '15', '17', '24', '25', '38']
+*** fold 1/26 — held-out subject 1 ***
+  [train] 1/237 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 10 edges on 246 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=0.7778, macro-F1=0.5079
+*** fold 2/26 — held-out subject 2 ***
+  [train] 1/233 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 11 edges on 242 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=0.4615, macro-F1=0.3214
+*** fold 3/26 — held-out subject 3 ***
+  [train] 1/239 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 10 edges on 248 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=0.4286, macro-F1=0.3929
+*** fold 4/26 — held-out subject 4 ***
+  [train] 1/241 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 9 edges on 250 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=1.0000, macro-F1=1.0000
+*** fold 5/26 — held-out subject 5 ***
+  [train] 1/227 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 10 edges on 236 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=0.6316, macro-F1=0.5251
+*** fold 6/26 — held-out subject 6 ***
+  [train] 1/241 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 9 edges on 250 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=0.8000, macro-F1=0.6667
+*** fold 7/26 — held-out subject 7 ***
+  [train] 1/237 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 11 edges on 246 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=0.3333, macro-F1=0.2500
+*** fold 8/26 — held-out subject 8 ***
+  [train] 1/243 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 9 edges on 252 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=1.0000, macro-F1=1.0000
+*** fold 9/26 — held-out subject 9 ***
+  [train] 1/233 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 9 edges on 241 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=0.6154, macro-F1=0.4792
+*** fold 10/26 — held-out subject 10 ***
+  [train] 1/233 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 10 edges on 241 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=0.9231, macro-F1=0.4800
+*** fold 11/26 — held-out subject 11 ***
+  [train] 1/236 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 10 edges on 245 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=0.7000, macro-F1=0.4889
+*** fold 12/26 — held-out subject 12 ***
+  [train] 1/234 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 11 edges on 243 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=0.4167, macro-F1=0.2667
+*** fold 13/26 — held-out subject 13 ***
+  [train] 1/238 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 10 edges on 247 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=0.5000, macro-F1=0.3333
+*** fold 14/26 — held-out subject 14 ***
+  [train] 1/242 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 10 edges on 251 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=0.7500, macro-F1=0.7333
+*** fold 15/26 — held-out subject 15 ***
+  [train] 1/243 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 11 edges on 252 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=1.0000, macro-F1=1.0000
+*** fold 16/26 — held-out subject 16 ***
+  [test] 1/4 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 10 edges on 251 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=0.3333, macro-F1=0.2500
+*** fold 17/26 — held-out subject 17 ***
+  [train] 1/212 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 12 edges on 219 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=0.4706, macro-F1=0.4733
+*** fold 18/26 — held-out subject 18 ***
+  [train] 1/243 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 9 edges on 252 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=1.0000, macro-F1=1.0000
+*** fold 19/26 — held-out subject 19 ***
+  [train] 1/231 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 11 edges on 239 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=0.6667, macro-F1=0.5000
+*** fold 20/26 — held-out subject 20 ***
+  [train] 1/235 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 9 edges on 244 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=0.6364, macro-F1=0.2593
+*** fold 21/26 — held-out subject 21 ***
+  [train] 1/244 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 10 edges on 253 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=0.5000, macro-F1=0.3333
+*** fold 22/26 — held-out subject 22 ***
+  [train] 1/244 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 9 edges on 253 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=1.0000, macro-F1=1.0000
+*** fold 23/26 — held-out subject 23 ***
+  [train] 1/234 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 10 edges on 243 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=0.4167, macro-F1=0.2429
+*** fold 24/26 — held-out subject 24 ***
+  [train] 1/239 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 11 edges on 245 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=0.5714, macro-F1=0.3889
+*** fold 25/26 — held-out subject 25 ***
+  [train] 1/239 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 10 edges on 248 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=0.2857, macro-F1=0.1250
+*** fold 26/26 — held-out subject 26 ***
+  [train] 1/230 sequences have no flow images on disk (see flow_skip_log.csv from compute_flow_casme2.py) — excluding them from this fold.
+  FCI learned 10 edges on 238 training samples
+Pretrained checkpoint: 262/262 backbone parameter tensors matched by name (100.0%).
+  2 checkpoint keys had no match in the model (e.g. ['head.weight', 'head.bias'])
+  -> acc=0.1250, macro-F1=0.0556
+
+LOSO mean acc: 0.6286, mean macro-F1: 0.5028
+Per-fold results written to: results_fci.csv
+
+FCI graph stability across folds: {'stability_ratio': np.float64(0.4), 'n_ever_present': 15, 'n_always_present': 6}
+FCI vs hand-designed graph — mean precision: 0.497, mean recall: 0.451
